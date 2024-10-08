@@ -23,7 +23,7 @@ export class Interactions {
 
     lenis.on("scroll", ScrollTrigger.update);
 
-    gsap.ticker.add(time => {
+    gsap.ticker.add((time) => {
       lenis.raf(time * 1000);
     });
 
@@ -34,7 +34,7 @@ export class Interactions {
     /**
      * - preload media
      * - initializations
-     * - call onpreloaded on conpletion
+     * - call onpreloaded on completion
      * */
     this.onPreloaded();
   }

@@ -27,7 +27,7 @@ export class Hello extends Dom {
           trigger: this.element,
           start: "top top",
 
-          function: tl => {
+          function: (tl) => {
             tl.to(this.secondaryElements.dash[0], {
               width: "40vw",
             });
